@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "DO-IT-YOURSELF",
+    "version": "1.0",
+    "description": "If you want to get better at leetcode do not look at solution, until there is nothing left to think",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "DO-IT-YOURSELF"
+    },
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": [
+        "https://generativelanguage.googleapis.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://leetcode.com/problems/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}

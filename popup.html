@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-IT-YOURSELF</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="app">
+
+      <div class="header">
+        <span class="logo">DIY</span>
+        <span class="tagline">Think first. Peek never.</span>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-meta">
+          <span class="problem-number">CURRENT PROBLEM</span>
+          <span id="problem-difficulty" class="badge">-</span>
+        </div>
+        <p id="problem-title" class="problem-title">-</p>
+      </div>
+
+      <div class="cooldown-row">
+        <label class="cooldown-label">Cooldown</label>
+        <input type="number" id="cooldown-input" class="cooldown-input" value="5" min="1" max="60">
+        <span class="cooldown-unit">mins</span>
+      </div>
+
+      <button id="hint-btn" class="hint-btn">
+        <span class="btn-icon">⚡</span>
+        <span id="hint-btn-text">Get Hint</span>
+      </button>
+
+      <div id="loading" class="loading" style="display:none;">
+        <div class="dots">
+          <span></span><span></span><span></span>
+        </div>
+        <p>Thinking...</p>
+      </div>
+
+      <div id="hint-output" class="hint-box"></div>
+
+      <div class="history-section">
+        <p class="history-label">HINT HISTORY</p>
+        <div id="history-list" class="history-list"></div>
+      </div>
+
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
