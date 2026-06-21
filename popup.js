@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cooldownToggle = document.getElementById("cooldown-toggle")
     const historyList = document.getElementById("history-list")
 
-    const GROQ_API_KEY = "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"
+    const GROQ_API_KEY = "YOUR_API_KEY_HERE"
     const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
     let countdownInterval = null
